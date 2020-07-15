@@ -3,6 +3,7 @@ body{
   width: 85%;
   margin-left: 7%;
 }
+/* Container of the title*/
 #title_ct{
   width: 100%;
   background-color: #180557;
@@ -11,6 +12,8 @@ body{
 #title_rw{
   justify-content: center;
 }
+
+/* Title of the page and the animation */
 .title {
   position: relative;
   height: 10%;
@@ -159,6 +162,7 @@ body{
   }
 }
 
+/* Title of the Timeline */
 #mg_timeline{
   margin-top: 1%;
   font-size: 200%;
@@ -304,4 +308,121 @@ svg {
   font-size: 180%;
   color: azure;
   -webkit-text-stroke: 1px black; /* width and color */
+}
+
+/* To define in cellphones */
+@media only screen and (max-width: 500px) {
+  body{
+    width: 95%;
+    margin-left: 3%;
+  }
+  /* Title of the page and the animation */
+  .title {
+    text-align: center;
+    font-size: 350%;
+    font-weight: 500;
+  }
+  
+  /* Title of the Timeline */
+  #mg_timeline{
+    font-size: 180%;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 20px 15px;
+  }
+  
+  /* The circles on the timeline */
+  .container.left::after {
+    right: -40px;
+  }
+  .container.right::after {
+    left: -38px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -33%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 33%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    right: 6px;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    left: 6px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 30px 10px;
+  }
+ 
+  #marriage_bt{
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+  /* Title of the page and the animation */
+  body{
+    width: 95%;
+    margin-left: 3%;
+  }
+  .title {
+    font-size: 320%;
+  }
+  
+  /* Title of the Timeline */
+  #mg_timeline{
+    font-size: 150%;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 20px 15px;
+  }
+  
+  /* The circles on the timeline */
+  .container.left::after {
+    right: -40px;
+  }
+  .container.right::after {
+    left: -38px;
+  }
+  /* Place the container to the left */
+  .left {
+    left: -33%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 33%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    right: 6px;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    left: 6px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 30px 10px;
+  }
+ 
+  #marriage_bt{
+    font-size: 120%;
+  }
 }
