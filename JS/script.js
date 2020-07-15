@@ -78,6 +78,6 @@ d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(f
         }));
 
     svg.append("circle").attr("cx",7).attr("cy",449).attr("r", 7).style("fill", "#F7A8B8")
-    svg.append("text").attr("x", 27).attr("y", 450).text("Legal marriage").style("font-size", "25px").style("fill", "azure").style('font-family','gilbert-color-bold-preview5 ,sans-serif').attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 27).attr("y", 450).text("Legal marriage").style("font-size", "25px").style("fill", "azure").style('font-family','Staatliches, cursive').attr("alignment-baseline","middle")
     svg.append("circle").attr("cx",7).attr("cy",483).attr("r", 7).style("fill", "#c699fa")
-    svg.append("text").attr("x", 27).attr("y", 485).text("Civil unions").style("font-size", "25px").style("fill", "azure").style('font-family','gilbert-color-bold-preview5 ,sans-serif').attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 27).attr("y", 485).text("Civil unions").style("font-size", "25px").style("fill", "azure").style('font-family','Staatliches, cursive').attr("alignment-baseline","middle")
