@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/luisjosemirandag/pridefornerds/master/CSS/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/1280px-Gay_Pride_Flag.svg.png" sizes="32x32" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.js"></script>
+  <title>Marriage Equality Timeline</title>
+</head>
+<body>
+<script src="https://raw.githubusercontent.com/luisjosemirandag/pridefornerds/master/JS/script.js"></script>
+    <div class="container-fluid" id="title_ct">
+        <div class="row" id="title_rw">
+            <div class="title">Marriage Equality Timeline
+                <div>Marriage Equality Timeline</div>
+                <div>Marriage Equality Timeline</div>
+                <div>Marriage Equality Timeline</div>
+                <div>Marriage Equality Timeline</div>
+                <div>Marriage Equality Timeline</div>
+                <div>Marriage Equality Timeline</div>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" id="marriage_bt" onclick="openTab(event, 'marriage_equality')">Marriage</button>
+    </div>
+    <div id="marriage_equality" class="tabcontent">
+        <div class="container-fluid" id="marriage_eq_ct">
+            <div class="row" id="mg_rw">
+                <p id="mg_timeline">Timeline of territories that have legalized same-sex marriage:</p>
+            </div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2001</h2>
+                        <h5>Netherlands</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2003</h2>
+                        <h5>Belgium</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2005</h2>
+                        <h5>Spain</h5>
+                        <h5>Canada</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2006</h2>
+                        <h5>South Africa</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2009</h2>
+                        <h5>Norway</h5>
+                        <h5>Sweden</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2010</h2>
+                        <h5>Portugal</h5>
+                        <h5>Iceland</h5>
+                        <h5>Argentina</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2012</h2>
+                        <h5>Denmark</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2013</h2>
+                        <h5>Brazil</h5>
+                        <h5>France</h5>
+                        <h5>Uruguay</h5>
+                        <h5>New Zealand</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2014</h2>
+                        <h5>England</h5>
+                        <h5>Wales</h5>
+                        <h5>Scotland</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2015</h2>
+                        <h5>Luxembourg</h5>
+                        <h5>United States of America</h5>
+                        <h5>Ireland</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <h5>Colombia</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <h5>Finland</h5>
+                        <h5>Malta</h5>
+                        <h5>Germany</h5>
+                        <h5>Australia</h5>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2019</h2>
+                        <h5>Austria</h5>
+                        <h5>Taiwan</h5>
+                        <h5>Ecuador</h5>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2020</h2>
+                        <h5>Northern Ireland</h5>
+                        <h5>Costa Rica</h5>
+                    </div>
+                </div>      
+            </div>
+            <br></br>
+            <div class="row" id="mg_rw">
+                <p id="mg_timeline">Today, same-sex marriage is available in 28 countries. Drag the globe below to see the countries above in a map plus countries with civil unions:</p>
+            </div>  
+        </div>
+        <div class="container_fluid" id = "mapContainer">
+            <svg id = "map" viewBox="0 0 900 508" preserveAspectRatio="xMidYMid"></svg>
+        </div>
+    </div>
+    <script src="https://raw.githubusercontent.com/luisjosemirandag/pridefornerds/master/JS/script.js"></script>
+</body>
+</html>
